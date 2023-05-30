@@ -51,7 +51,7 @@ sbut.onclick = function(){
     disp.style.animation = "wrong 1s 0s backwards";
     const utter = new SpeechSynthesisUtterance();
     utter.lang = "hi-IN";
-    utter.text = "try higher than " + gnum.value.toString();
+    utter.text =gnum.value.toString() + "से अधिक प्रयास करें";
     window.speechSynthesis.speak(utter);
 }
 setTimeout(rest, 1001);

@@ -15,7 +15,7 @@ sbut.onclick = function(){
     
     if(gnum.value == y){
     guess++;
-    text = "Yes!, the number is " + gnum.value.toString();
+    text = "हाँ !, उत्तर है" + gnum.value.toString();
     disp.textContent = "Yess";
     guesses.textContent = guess.toString();
     if(guess<s)
@@ -40,7 +40,7 @@ sbut.onclick = function(){
     disp.style.animation = "wrong 1s 0s backwards";
     const utter = new SpeechSynthesisUtterance();
     utter.lang = "hi-IN";
-    utter.text = "Try lower than " + gnum.value.toString();
+    utter.text = gnum.value.toString()+"से कम प्रयास करें";
     window.speechSynthesis.speak(utter);
 }
     else{
